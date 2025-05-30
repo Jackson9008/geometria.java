@@ -3,6 +3,7 @@ package br.com.fecaf;
 
 import br.com.fecaf.model.Circulo;
 import br.com.fecaf.model.Retangulo;
+import br.com.fecaf.model.Triangulo;
 
 public class Geometria {
     public static void main(String[] args) {
@@ -50,6 +51,26 @@ public class Geometria {
         circulo2.exibirInformacoes();
         circulo2.calcularArea();
         circulo2.calcularPerimetro();
+
+        // Instanciando Triangulo
+        Triangulo triangulo1 = new Triangulo();
+        triangulo1.nome = "Triangulo-1";
+        triangulo1.base = 5;
+        triangulo1.ladoB = 3;
+        triangulo1.ladoC = 4;
+        triangulo1.altura = 8;
+
+        boolean validarTriangulo = triangulo1.validarTriangulo();
+        if (validarTriangulo) {
+            triangulo1.exibirInformacoes();
+            triangulo1.calcularArea();
+            triangulo1.calcularPerimetro();
+        } else {
+            System.out.println("O triângulo não é válido ...");
+        }
+
+
+
     }
 
 }
