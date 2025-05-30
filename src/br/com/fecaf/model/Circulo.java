@@ -20,17 +20,18 @@ public class Circulo {
         System.out.println("A area do objeto " + nome + " é: " + area);
         System.out.println("/---------------------------/");
     }
-    public void calcularPerimetro (){
-        perimetro = 2 * Math.PI * raio;
-        System.out.println("/---------------------------/");
-        System.out.println("O perimetro do objeto " + nome + " é: " + perimetro);
-        System.out.println("/---------------------------/");
-    }
     public void calcularArea (){
         area = Math.PI * Math.pow(raio, 2);
         System.out.println("/---------------------------/");
         System.out.println("A area do objeto " + nome + " é: " + area);
         System.out.println("/---------------------------/");
     }
+    public void calcularPerimetro (){
+        perimetro = 2 * Math.PI * raio;
+        System.out.println("/---------------------------/");
+        System.out.println("O perimetro do objeto " + nome + " é: " + perimetro);
+        System.out.println("/---------------------------/");
+    }
+
 
 }
