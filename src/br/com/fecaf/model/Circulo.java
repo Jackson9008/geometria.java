@@ -1,8 +1,7 @@
 package br.com.fecaf.model;
 
-public class Retangulo {
-
-    public double lado1, lado2;
+public class Circulo {
+    public double raio;
     public double area;
     public double perimetro;
     public String nome;
@@ -10,30 +9,28 @@ public class Retangulo {
     public void exibirInformacoes (){
         System.out.println("/---------------------------/");
         System.out.println("O nome é: " + nome);
-        System.out.println("O lado1 é: " + lado1);
-        System.out.println("O lado2 é: " + lado2);
+        System.out.println("O raio é: " + raio);
+        System.out.println("A area é: " + area);
+        System.out.println("O perimetro é: " + perimetro);
         System.out.println("/---------------------------/");
     }
-
-    public void calcularArea () {
-        area = lado1 * lado2;
+    public void calcularDiametro (){
+        area = Math.PI * Math.pow(raio, 2);
         System.out.println("/---------------------------/");
         System.out.println("A area do objeto " + nome + " é: " + area);
         System.out.println("/---------------------------/");
     }
-    public void calcularPerimetro () {
-        perimetro = 2 * lado1 + 2 * lado2;
+    public void calcularPerimetro (){
+        perimetro = 2 * Math.PI * raio;
         System.out.println("/---------------------------/");
         System.out.println("O perimetro do objeto " + nome + " é: " + perimetro);
         System.out.println("/---------------------------/");
     }
-
-    public  void validarRetanguloEspecial () {
-        if (lado1 == lado2) {
-            System.out.println("O objeto " + nome + " É um retângulo especial (Quadrado)...");
-        } else {
-            System.out.println("O objeto " + nome + " Não é um retângulo especial ...");
-        }
+    public void calcularArea (){
+        area = Math.PI * Math.pow(raio, 2);
+        System.out.println("/---------------------------/");
+        System.out.println("A area do objeto " + nome + " é: " + area);
+        System.out.println("/---------------------------/");
     }
 
 }

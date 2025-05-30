@@ -1,6 +1,7 @@
 package br.com.fecaf;
 
 
+import br.com.fecaf.model.Circulo;
 import br.com.fecaf.model.Retangulo;
 
 public class Geometria {
@@ -31,6 +32,24 @@ public class Geometria {
         // Validar se é um Quadrado
         retangulo.validarRetanguloEspecial();
         retangulo2.validarRetanguloEspecial();
+
+        // Instanciando Circulo
+        Circulo circulo = new Circulo();
+        circulo.nome = "Circulo-1";
+        circulo.raio = 10;
+
+        circulo.exibirInformacoes();
+        circulo.calcularArea();
+        circulo.calcularPerimetro();
+
+        // Instaciando Circulo 2
+        Circulo circulo2 = new Circulo();
+        circulo2.nome = "Circulo-2";
+        circulo2.raio = 15;
+
+        circulo2.exibirInformacoes();
+        circulo2.calcularArea();
+        circulo2.calcularPerimetro();
     }
 
 }
